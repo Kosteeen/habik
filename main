@@ -1,0 +1,51 @@
+/******************************************************************************
+
+                              Online C++ Compiler.
+               Code, Compile, Run and Debug C++ program online.
+Write your code in this editor and press "Run" button to compile and execute it.
+
+||
+!
+&&
+
+
+*******************************************************************************/
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+int x, y, z;
+std::cin >> x;
+std::cin >> y;
+std::cin >> z;
+std::cout << x << std::endl;
+std::cout << y << std::endl;
+std::cout << z << std::endl;
+if ((x > y) xor (x > z))
+{
+    if (y > z)
+    std::cout << x + z << std::endl;
+    else
+    std::cout << x + y << std::endl;
+}  
+else
+{
+  if ((x > y) && (x > z))  
+   {
+       if (y > z)
+       std::cout << x + z << std::endl;
+       else 
+       std::cout << x + y << std::endl;
+   }
+   else
+   {
+       if (y < z)
+       std::cout << x + z << std::endl;
+       else
+       std::cout << x + y << std::endl;
+   }
+}
+}
